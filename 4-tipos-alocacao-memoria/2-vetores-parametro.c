@@ -21,9 +21,9 @@ void imprimeVetor(int *vs, int n){
   printf("\n\n");
 }
 
-void desalocaVetor(int **v){
+void desalocaVetor(int *v, int n){
   free(v);
-  v = NULL;
+  v =NULL;
 }
 
 int main(){
@@ -45,6 +45,7 @@ int main(){
   somaVetor(vc, 5, 2);
   imprimeVetor(vc, 5);
 
-  desalocaVetor(vc);
+  desalocaVetor(vc, 5);
+
   return 0;
 }
