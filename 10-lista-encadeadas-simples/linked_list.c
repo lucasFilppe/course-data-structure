@@ -26,8 +26,8 @@ LinkedList* LinkedList_create(){
 }
 
 void LinkedList_add_first(LinkedList *L, int val){
-  //se a lista esta vazia
-  if(L->begin == NULL){
-    SimpleNode *p = S
-  }
+    SimpleNode *p = SimpleNode_Create(val);
+    p->next = L->begin;
+    L->begin = p;
+  
 }
