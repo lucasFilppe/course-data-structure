@@ -1,4 +1,5 @@
-#inlcude "linked_list.h"
+#include "linked_list.h"
+#include <stdio.h>
 
 typedef struct _simple_node{
   int val;
